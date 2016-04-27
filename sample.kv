@@ -1,0 +1,51 @@
+#:kivy 1.0
+
+<SampleUI>:
+
+    leftLabel: left_label_ID
+    rightLabel: right_label_ID
+    timerLabel: timer_label_ID
+    updateButton: update_button_ID
+    timerButton: timer_button_ID
+    slider: slider_ID
+    textInput: textInput_ID
+
+    Label:
+        id: left_label_ID
+        font_size: 70
+        center_x: root.width / 4
+        top: root.top - 50
+        text: "Left Label"
+
+    Label:
+        id: right_label_ID
+        font_size: 70
+        center_x: root.width * 3 / 4
+        top: root.top - 50
+        text: str(int(slider_ID.value)) # The label updates to the slider value as the slider moves
+
+    Label:
+        id: timer_label_ID
+        font_size: 70
+        center_x: root.width * 2 / 4
+        top: root.top - 150
+        text: "0"
+
+    Slider:
+        id: slider_ID
+        min: 0.
+        max: 100.
+
+    Button:
+        id: update_button_ID
+        center_x: root.width / 4
+        text: 'Update Label'
+
+    Button:
+        id: timer_button_ID
+        center_x: root.width / 4 + 400
+        text: 'Countdown'
+
+    TextInput:
+        id: textInput_ID
+        center_x: root.width / 4 + 200
