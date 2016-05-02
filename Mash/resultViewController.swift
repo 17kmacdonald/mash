@@ -75,6 +75,7 @@ class ResultViewController: UIViewController {
     @IBAction func facebookButton(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
             var fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            fbShare.setInitialText("Hello!")
             
             self.presentViewController(fbShare, animated: true, completion: nil)
             

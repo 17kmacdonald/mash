@@ -20,10 +20,6 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        print ("hello")
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,13 +30,6 @@ class HomeViewController: UIViewController {
             locationViewController.mashModel = self.mashModel
         } else if let favoritesViewController = segue.destinationViewController as? FavoritesViewController {
             favoritesViewController.mashModel = self.mashModel
-        }
-    
-    }
-    
-    @IBAction func unwindHomeViewController(sender: UIStoryboardSegue) {
-        if let resultViewController = sender.sourceViewController as? ResultViewController {
-            homeViewController.mashModel! = self.mashModel
         }
     }
 }
