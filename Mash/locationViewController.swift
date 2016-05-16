@@ -13,7 +13,7 @@ import UIKit
 class LocationViewController: UIViewController, UITextFieldDelegate {
     
     var mashModel: MashModel?
-
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true;
@@ -67,5 +67,19 @@ class LocationViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    @IBAction func randomLocation1(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        locationTextField1.text = randomChoice.locationRandomChoices
+    }
+    
+    @IBAction func randomLocation2(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        locationTextField2.text = randomChoice.locationRandomChoices
+    }
+    
+    @IBAction func randomLocation3(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        locationTextField3.text = randomChoice.locationRandomChoices
+    }
     
 }

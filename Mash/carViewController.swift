@@ -57,5 +57,21 @@ class CarViewController: UIViewController {
         }
     }
     
+    @IBAction func randomCar1(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        carText3.text = randomChoice.carRandomChoices
+    }
+    
+    
+    @IBAction func randomCar2(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        carText1.text = randomChoice.carRandomChoices
+    }
+    
+    
+    @IBAction func randomCar3(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        carText2.text = randomChoice.carRandomChoices
+    }
     
 }

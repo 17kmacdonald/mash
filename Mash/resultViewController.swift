@@ -72,20 +72,44 @@ class ResultViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func facebookButton(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
-            var fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            fbShare.setInitialText("Hello!")
+    
+    
+//    @IBAction func facebookButton(sender: AnyObject) {
+//        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+//            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+//            print(fbShare.setInitialText("Hello!"))
+//            
+//            self.presentViewController(fbShare, animated: true, completion: nil)
+//            
+//        } else {
+//            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+//            
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+//            self.presentViewController(alert, animated: true, completion: nil)
+//        }
+//    }
+    
+    
+    @IBAction func tweetNow(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             
-            self.presentViewController(fbShare, animated: true, completion: nil)
+            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            tweetShare.setInitialText("Check out this cool app: link" + "'" + resultText.text + "'")
+            
+            self.presentViewController(tweetShare, animated: true, completion: nil)
             
         } else {
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to tweet.", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let homeViewController = segue.destinationViewController as? HomeViewController {

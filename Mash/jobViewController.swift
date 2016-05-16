@@ -56,4 +56,22 @@ class JobViewController: UIViewController {
             spouseViewController.mashModel!.job3 = jobText3.text!
         }
     }
+    
+    @IBAction func randomJob1(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        jobText1.text = randomChoice.jobRandomChoices
+    }
+    
+    @IBAction func randomJob2(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        jobText3.text = randomChoice.jobRandomChoices
+    }
+    
+    @IBAction func randomJob3(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        jobText2.text = randomChoice.jobRandomChoices
+    }
+    
+    
+    
 }

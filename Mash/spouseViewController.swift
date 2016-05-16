@@ -58,4 +58,19 @@ class SpouseViewController: UIViewController {
         
     }
     
+    @IBAction func randomSpouse1(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        spouseText1.text = randomChoice.spouseRandomChoices
+    }
+    
+    @IBAction func randomSpouse2(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        spouseText2.text = randomChoice.spouseRandomChoices
+    }
+    
+    @IBAction func randomSpouse3(sender: UIButton) {
+        let randomChoice = RandomChoices()
+        spouseText3.text = randomChoice.spouseRandomChoices
+    }
+    
 }

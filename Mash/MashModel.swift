@@ -40,7 +40,7 @@ class MashModel {
     var favorites1 = ""
 
     func mashLocation() {
-        let randomLocation = Int(arc4random_uniform(2))
+        let randomLocation = Int(arc4random_uniform(3))
 
         
         if randomLocation == 0 {
@@ -59,7 +59,7 @@ class MashModel {
     func mashKids() {
         
             
-        let randomKids = Int(arc4random_uniform(2))
+        let randomKids = Int(arc4random_uniform(3))
             
         if randomKids == 0 {
         kidsYouHave = kids1
@@ -75,13 +75,13 @@ class MashModel {
     }
 
     func mashSpouse() {
-        let randomSpouse = Int(arc4random_uniform(2))
+        let randomSpouse = Int(arc4random_uniform(3))
        
         
         if randomSpouse == 0 {
         spouseYouHave = spouse1
         }
-        
+    
         else if randomSpouse == 1 {
         spouseYouHave = spouse2
         }
@@ -92,7 +92,7 @@ class MashModel {
     }
 
     func mashJob() {
-        let randomJob = Int(arc4random_uniform(2))
+        let randomJob = Int(arc4random_uniform(3))
         
         if randomJob == 0 {
         jobYouHave = job1
@@ -108,7 +108,7 @@ class MashModel {
     }
         
     func mashCar() {
-        let randomCar = Int(arc4random_uniform(2))
+        let randomCar = Int(arc4random_uniform(3))
 
         
         if randomCar == 0 {
@@ -126,7 +126,7 @@ class MashModel {
 
     func mashHouse() {
         
-        let randomHouse = Int(arc4random_uniform(3))
+        let randomHouse = Int(arc4random_uniform(4))
         
         if randomHouse == 0 {
         houseYouHave = "mansion"

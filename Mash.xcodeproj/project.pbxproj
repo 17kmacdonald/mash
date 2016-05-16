@@ -12,6 +12,8 @@
 		73609EB11C90A2FB008FF77C /* locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73609EB01C90A2FB008FF77C /* locationViewController.swift */; };
 		73609EB31C90A30B008FF77C /* jobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73609EB21C90A30B008FF77C /* jobViewController.swift */; };
 		73609EB51C90A314008FF77C /* carViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73609EB41C90A314008FF77C /* carViewController.swift */; };
+		739840931CE250880099B09D /* locationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739840921CE250880099B09D /* locationTableViewController.swift */; };
+		739840951CE251DE0099B09D /* randomChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739840941CE251DE0099B09D /* randomChoices.swift */; };
 		73AE2BBB1C8A444F00025772 /* instructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AE2BBA1C8A444F00025772 /* instructionsViewController.swift */; };
 		73D0FC9B1CA1B8980042BE50 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D0FC9A1CA1B8980042BE50 /* resultViewController.swift */; };
 		73EB17F41C972179005B178E /* MashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB17F31C972179005B178E /* MashModel.swift */; };
@@ -48,6 +50,8 @@
 		73609EB01C90A2FB008FF77C /* locationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationViewController.swift; sourceTree = "<group>"; };
 		73609EB21C90A30B008FF77C /* jobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jobViewController.swift; sourceTree = "<group>"; };
 		73609EB41C90A314008FF77C /* carViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carViewController.swift; sourceTree = "<group>"; };
+		739840921CE250880099B09D /* locationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = locationTableViewController.swift; path = Assets.xcassets/locationTableViewController.swift; sourceTree = "<group>"; };
+		739840941CE251DE0099B09D /* randomChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = randomChoices.swift; path = Assets.xcassets/randomChoices.swift; sourceTree = "<group>"; };
 		73AE2BBA1C8A444F00025772 /* instructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instructionsViewController.swift; sourceTree = "<group>"; };
 		73D0FC9A1CA1B8980042BE50 /* resultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 		73EB17F31C972179005B178E /* MashModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MashModel.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				73EB17F31C972179005B178E /* MashModel.swift */,
 				73609EB21C90A30B008FF77C /* jobViewController.swift */,
 				73F48F211C500E2F00226216 /* Main.storyboard */,
+				739840921CE250880099B09D /* locationTableViewController.swift */,
+				739840941CE251DE0099B09D /* randomChoices.swift */,
 				73F48F241C500E2F00226216 /* Assets.xcassets */,
 				73F48F261C500E2F00226216 /* LaunchScreen.storyboard */,
 				73F48F291C500E2F00226216 /* Info.plist */,
@@ -285,12 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				73609EAF1C90A2EF008FF77C /* spouseViewController.swift in Sources */,
+				739840951CE251DE0099B09D /* randomChoices.swift in Sources */,
 				73AE2BBB1C8A444F00025772 /* instructionsViewController.swift in Sources */,
 				73F48F201C500E2F00226216 /* kidsViewController.swift in Sources */,
 				73609EB31C90A30B008FF77C /* jobViewController.swift in Sources */,
 				73D0FC9B1CA1B8980042BE50 /* resultViewController.swift in Sources */,
 				73EB17F41C972179005B178E /* MashModel.swift in Sources */,
 				73609EB51C90A314008FF77C /* carViewController.swift in Sources */,
+				739840931CE250880099B09D /* locationTableViewController.swift in Sources */,
 				73EF86AD1CA5E89100691C0C /* favoritesViewController.swift in Sources */,
 				731CF4BE1CBEC39400965D46 /* homeViewController.swift in Sources */,
 				73609EB11C90A2FB008FF77C /* locationViewController.swift in Sources */,
